@@ -1,9 +1,11 @@
-Identify latest released movies let's say top 25 from the imdb and store it in DB as latest shows (use python imdb package)
-Create list API to fetch latest shows
-Provide the booking api for the the shows
+Task:
 
-Create a API which can show latest booking for the users
+1. Identify latest released movies let's say top 25 from the imdb and store it in DB as latest shows (use python imdb package)
+2. Create list API to fetch latest shows
+3. Provide the booking api for the the shows
+4. Create a API which can show latest booking for the users
 
+Solutions APIs.
 1.API to get latest booking of the user
 
 METHOD : POST
