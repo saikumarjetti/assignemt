@@ -40,18 +40,7 @@ post = {"_id": 0, "moviesList": top25Movies}
 latest_shows.update_one({"_id": 0}, {"$set": {"moviesList": top25Movies}})
 
 
-def monitor(function=None):
-    def wrapper(*args, **kwargs):
-        _ = function(*args, **kwargs)
-        print("Ip Address  : {} ".format(request.remote_user))
-        print("Cookies : {} ".format(request.cookies))
-        print(request.user_agent)
-        return _
-    return wrapper
-
-
 class List(Resource):
-    @monitor
     def get(self):
         result = {}
         temp = latest_shows.find_one({"_id": 0})
